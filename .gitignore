@@ -1,5 +1,5 @@
 # ===========================
-# Java
+# Java / Build Artifacts
 # ===========================
 *.class
 *.jar
@@ -22,7 +22,7 @@ buildNumber.properties
 .mvn/wrapper/maven-wrapper.jar
 
 # ===========================
-# Gradle (if used)
+# Gradle
 # ===========================
 .gradle/
 build/
@@ -30,52 +30,44 @@ build/
 !**/src/test/**/build/
 
 # ===========================
-# Spring Boot
+# Spring Boot / Logs
 # ===========================
-*.log
 logs/
+*.log
 spring-boot-starter*.jar
 
 # ===========================
-# Application Properties (Sensitive)
+# Environment / Sensitive Config
 # ===========================
+.env
+.env.*
+*.env
 application-local.yml
 application-local.properties
 application-prod.yml
 application-prod.properties
-*.env
-.env
-.env.local
-.env.*.local
 
 # ===========================
-# IntelliJ IDEA
+# IDE / Editor Files
 # ===========================
 .idea/
 *.iml
 *.ipr
 *.iws
+.vscode/
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+bin/
 
-# ===========================
-# Eclipse
-# ===========================
-.apt_generated
+# Eclipse / STS
 .classpath
-.factorypath
 .project
 .settings/
+.factorypath
+.apt_generated
 .springBeans
 .sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
 
-# ===========================
 # NetBeans
-# ===========================
 /nbproject/private/
 /nbbuild/
 /dist/
@@ -83,50 +75,28 @@ bin/
 /.nb-gradle/
 
 # ===========================
-# VS Code
-# ===========================
-.vscode/
-
-# ===========================
-# OS Generated Files
-# ===========================
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-desktop.ini
-
-# ===========================
-# Logs and Databases
-# ===========================
-*.log
-*.sql
-*.sqlite
-*.db
-
-# ===========================
-# Package Files
-# ===========================
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# ===========================
-# Test Output
+# Test Reports
 # ===========================
 /test-output/
 /surefire-reports/
 /failsafe-reports/
 
 # ===========================
-# Miscellaneous
+# Databases / Local Storage
+# ===========================
+*.db
+*.sqlite
+*.sql
+
+# ===========================
+# OS Generated Files
+# ===========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===========================
+# Temporary / Cache Files
 # ===========================
 *.swp
 *.swo
@@ -134,5 +104,3 @@ desktop.ini
 .cache/
 tmp/
 temp/
-*.py
-*.pyc
